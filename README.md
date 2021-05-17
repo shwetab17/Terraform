@@ -12,6 +12,6 @@ The files included are:
        
  Prerequisites:
  
- AWS account 
- IAM role with necessary permissions
- Terraform & AWS CLI configured on machine from which the scripts are to be run
+ 1. AWS account 
+ 2. IAM role with necessary permissions
+ 3. Terraform & AWS CLI configured on machine from which the scripts are to be run
