@@ -5,10 +5,10 @@
 
 The files included are:
 
-    main.tf: main.tf file contains the terraform script to create necessary resources.
-    variables.tf: for declaring variables being used in the main script
-    terraform.tfvars: for defining/overriding the varibles
-    init_webserver.sh: User data script for launch config which installs & starts nginx server and creates mount points
+    a)  main.tf: main.tf file contains the terraform script to create necessary resources.
+    b)  variables.tf: for declaring variables being used in the main script
+    c)  terraform.tfvars: for defining/overriding the varibles
+    d)  init_webserver.sh: User data script for launch config which installs & starts nginx server and creates mount points
        
 # Prerequisites:
  
