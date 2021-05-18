@@ -10,7 +10,6 @@ resource "aws_vpc" "main" {
   tags = {
     Project = "demo-assignment"
     Name = "My Demo VPC"
- 
  }
 }
 
