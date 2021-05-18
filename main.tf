@@ -1,5 +1,4 @@
 # Configure the AWS Provider
-
 provider "aws" {
    region  = var.region
 }
@@ -55,7 +54,6 @@ resource "aws_subnet" "prv_sub1" {
 }
 
 # Create Private Subnet2
-
 resource "aws_subnet" "prv_sub2" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = var.prv_sub2_cidr_block
@@ -290,6 +288,12 @@ resource "aws_autoscaling_group" "Demo-ASG-tf" {
   health_check_type  = "EC2"
   launch_configuration = aws_launch_configuration.webserver-launch-config.name
   vpc_zone_identifier = ["${aws_subnet.prv_sub1.id}","${aws_subnet.prv_sub2.id}"]
+  
+ tag {
+    key                 = "Name"
+    value               = "Demo-ASG-tf"
+    propagate_at_launch = true
+    }
 } 
 
 # Create Target group
