@@ -1,7 +1,8 @@
 # Terraform snippet for deploying ASG in private subnet behind ALB
 
  Below is the architecture to be implemented:
- ![arch]![image](https://user-images.githubusercontent.com/70053804/119806683-0df50a00-bf00-11eb-9155-bcfbbb5cc891.png)
+
+![image](https://user-images.githubusercontent.com/70053804/119807062-662c0c00-bf00-11eb-97f9-1a463a48ec0b.png)
 
 
 The files included are:
